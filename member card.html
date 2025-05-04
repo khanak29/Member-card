@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Member Card
+</title>
+</head>
+<body> 
+<style>
+
+.card {
+    width:190px;
+    background-color:black;
+    height:310px;
+    border:20px black;
+    padding: 20px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    height:90px;
+    width:90px;
+    clip-path:circle(50%);
+}
+.card h1{
+    color:white;
+    font-size:40px;
+    text-align:center;
+    font-family:komrile;
+    font-style:normal
+    font-align:center;
+    line-height:normal;
+    padding:5px;
+    margin:5px;
+}
+.card h2{
+    color:rgb(35, 114, 170);
+    font-size:34px;
+    text-align:center;
+    font-style:normal;
+    padding:3px;
+    margin:3px;
+
+}
+.icon{ 
+    width:30px;
+    height:30px;
+    align-items: center;
+    display:flex; 
+    justify-content:center;
+   
+}
+.icon img {
+    width:20px;
+    height:20px;
+   display:none; 
+    }
+    .card:hover .icon img {
+        display:block;
+        transition:all 1s ease-in-out; 
+
+    }
+</style> 
+<div class="card"> 
+    <img src="khanak.jpeg" alt="Khanak Mankatalia">
+    <h1> Khanak <br> Mankatalia</h1> 
+    <h2>President</h2>
+ 
+    <div class="icon"> <a href="https://www.linkedin.com/in/khanak-mankatalia-b38997355/" target="_blank">
+    <img src ="linkedin.png"> 
+    </a>
+</div>
+</div>
+</body>
+</html>
