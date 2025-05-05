@@ -8,9 +8,10 @@
 <style>
 
 .card {
-    width:260px;
+    width:300px;
     background-color:black;
-    height:410px;
+    background-image: url("bg2.jpeg");
+    height:450px;
     border:20px black;
     padding: 20px;
     margin:10px;
@@ -26,28 +27,26 @@
     align-items: center;}
     
 .card img{
-    height:150px;
-    width:150px;
+    height:180px;
+    width:180px;
     clip-path:circle(50%);
 }
 .card h1{
     color:white;
-    font-size:50px;
+    font-size:58px;
     text-align:center;
-    font-family:komrile;
-    font-style:normal
-    font-align:center;
+    font-family:cursive;
+    text-align:center;
     line-height:normal;
-    padding:10px;
-    margin:8px;
+    padding:3px;
+    margin:2px;
 }
 .card h2{
     color:rgb(35, 114, 170);
-    font-size:44px;
-    text-align:center;
-    font-style:normal;
+    font-size:50px;
     padding:0px;
     margin:0px;
+    font-family:calibri;
 
 }
 .icon{ 
@@ -56,8 +55,9 @@
     align-items: center;
     display:flex; 
     justify-content:center;
-   
+    overflow:hidden;
 }
+
 .card:hover { 
     transition: transform 0.3s ease-in-out;
     transform: translateY(-20px);
@@ -67,24 +67,46 @@
 .icon img {
     width:20px;
     height:20px;
-   opacity:0; 
-   transform:translateY(0px);
+    position: absolute
+;
+
     }
-    .card:hover .icon img {
+    .icon{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        overflow:hidden;
+        opacity:0; 
+        transform:translateY(0px);}
+
+
+    
+    .card:hover .icon{
         opacity:1;
-        transition: transform 0.2s ease-in-out;
-        transform: translateY(-10px);
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-5px);
+        transition-delay: 0.1s;
        
         
+}
+.icon a {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
 }
 </style> 
 <div class="container">
 <div class="card"> 
-    <img src="khanak.jpeg" alt="Khanak Mankatalia">
+    <img src="khanak2.jpg" alt="Khanak Mankatalia">
     <h1> Khanak <br> Mankatalia</h1> 
     <h2>President</h2>
  
-    <div class="icon"> <a href="https://www.linkedin.com/in/khanak-mankatalia-b38997355/" target="_blank">
+    <div class="icon"> <a href="https://www.linkedin.com/in/khanak-mankatalia-b38997355/" target="_blank" >
     <img src ="linkedin.png" alt="linkedin"> 
     </a>
 </div>
