@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Member Card
+</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Calibri">
+</head>
+<body> 
+<style>
+
+.card {
+    width:300px;
+    background-color:black;
+    background-image: url("bg2.jpeg");
+    height:450px;
+    border:20px black;
+    padding: 20px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out; 
+    border:4px solid white;
+} /*this section is for the box that holds all the content. bg image is to add an image in the bg, padding , margin etc are for the structure of the box . display, flex directions,justify content and align items is mainly to position the box in the centre. transition is to add the animation in order to make the box move when hovered upon*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    /*To position the container in the centre*/
+.card img{
+    height:180px;
+    width:180px;
+    clip-path:circle(50%);
+}/*height and width determine the size of the image. clip path is to change the shape. 50% with same width and height is to make the image circular*/
+.card h1{
+    color:white;
+    font-size:37px;
+    text-align:center;
+    font-family:'poppins',sans-serif;
+    font-weight: lighter;
+    text-align:center;
+    line-height:normal;
+    padding:3px;
+    margin:2px;
+}/*determines the features of h1 heading i.e, "Khanak Mankatalia" font size is for the size of the text, text align is to align the text in the centre, font family is to give the text a particular font. font weight is to decide the thickness of the font, padding and margin for the space above and below.*/
+.card h2{
+    color:rgb(35, 114, 170);
+    font-size:33px;
+    padding:0px;
+    margin:0px;
+    font-family:'poppins',sans-serif;
+  font-weight: lighter;
+}/*determines features of h2 heading. same as h1*/
+.icon{ 
+    width:40px;
+    height:40px;
+    align-items: center;
+    display:flex; 
+    justify-content:center;
+    overflow:hidden;
+}/*this section is for the icon that holds the image of the social media link. width and height is to determine the size of the icon. align items, display, justify content is to position the icon in the centre. overflow hidden is to hide the image when hovered upon*/
+
+.card:hover { 
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-30px);
+}
+    /*this section is for the hover effect. transition is to add the animation when the image is hovered upon and the negative value of transform is what makes it move upward*/
+.icon img {
+    width:20px;
+    height:20px;
+    position: absolute
+;/*this section is for the image of the social media link. width and height is to determine the size of the image. position absolute is to position the image in the centre of the icon*/
+
+    }
+    .icon{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        overflow:hidden;
+        opacity:0; 
+        transform:translateY(0px);
+    } /*this section is for the icon that holds the image of the social media link. width and height is to determine the size of the icon. align items, display, justify content is to position the icon in the centre. overflow hidden is to hide the image when hovered upon. opacity is to make it invisible when not hovered upon. transform is to position it in the centre*/
+
+
+    .card:hover .icon{
+        opacity:1;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-4px);
+        transition-delay: 0.1s;
+       } /*this section is for the hover effect. transition is to add the animation when the image is hovered upon and the negative value of transform is what makes it move upward. transition delay is to delay the animation*/
+.icon a {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+    /*this section is for the icon that holds the image of social media link. its to position it in centre*/
+</style> 
+<div class="container">
+<div class="card"> 
+    <img src="khanak2.jpg" alt="Khanak Mankatalia">
+    <h1> Khanak <br> Mankatalia</h1> 
+    <h2>President</h2>
+ 
+    <div class="icon"> <a href="https://www.linkedin.com/in/khanak-mankatalia-b38997355/" target="_blank" >
+    <img src ="linkedin.png" alt="linkedin"> 
+</a>
+</div>
+</div>
+</div>
+</body>
+</html>
